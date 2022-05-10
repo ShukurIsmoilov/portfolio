@@ -83,11 +83,11 @@ ul {
 }
 
 .subject-math {
-    color: rgba(0, 198, 160);
+    color: rgb(0, 198, 160);
 }
 
 .subject-CS {
-    color: rgba(255, 178, 0);
+    color: rgb(255, 178, 0);
 }
 
 .about-text__description {
@@ -120,12 +120,12 @@ ul {
 }
 
 .social {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .social-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
     align-items: center;
 
@@ -141,5 +141,10 @@ ul {
 
 .about-bg {
     width: 50vw;
-    background-color: rgb(20, 0, 0);
+    text-align: center;
+}
+
+.services {
+    background-color: rgba(255, 178, 0, 0.5);
+   height: 100vh;
 }
