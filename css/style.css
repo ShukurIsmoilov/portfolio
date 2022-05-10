@@ -1,0 +1,145 @@
+body {
+    font-size: 10px;
+    font-family: Montserrat, sans-serif;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    /* background: url('../media/logo.png') center no-repeat; */
+    background-size: contain;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-list__item a {
+    text-decoration: none;
+    color: #555;
+    padding: 0 1rem;
+}
+
+.navigation-list__item a:hover {
+    color: #aaa;
+    cursor: pointer;
+}
+
+.call-button,
+.hire-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    background-color: rgb(200, 45, 179);
+}
+
+.call-button:hover,
+.hire-button:hover {
+    cursor: pointer;
+    background-color: rgba(200, 45, 179, 0.5);
+}
+
+.about {
+    display: flex;
+}
+
+.about-text {
+    padding: 0 2rem;
+    max-width: 37rem;
+    font-size: 1rem;
+}
+
+.about-text__greeting {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+
+.name {
+    color: #555;
+}
+
+.subject-english {
+    color: rgb(200, 45, 179);
+}
+
+.subject-math {
+    color: rgba(0, 198, 160);
+}
+
+.subject-CS {
+    color: rgba(255, 178, 0);
+}
+
+.about-text__description {
+    margin-bottom: 2rem;
+}
+
+.about-text__description span {
+    font-weight: bold;
+}
+
+.about-text__portfolio {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-button {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: rgb(200, 45, 179);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    border: 1px solid rgba(200, 45, 179, 0.3);
+}
+
+.portfolio-button:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(200, 45, 179, 0.3);
+}
+
+.social {
+    margin-bottom: 2rem;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+
+}
+
+.social-list__item a {
+    color: #333;
+}
+
+.social-list__item a:hover {
+    color: #555;
+}
+
+.about-bg {
+    width: 50vw;
+    background-color: rgb(20, 0, 0);
+}
