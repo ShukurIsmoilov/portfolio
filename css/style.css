@@ -6,6 +6,12 @@ ul {
     list-style: none;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
 .header {
     display: flex;
     flex-flow: wrap;
@@ -59,9 +65,9 @@ ul {
 }
 
 .about-text {
-    padding: 0 4rem;
     max-width: 30rem;
     font-size: 1rem;
+    margin-right: 4rem;
 }
 
 .section-title {
@@ -141,8 +147,12 @@ ul {
     background-color: rgb(200, 45, 179);
 }
 
-.services {
+#services {
     background-color: rgba(255, 178, 0, 0.5);
+
+}
+
+.services {
     padding: 1px 4rem;
     display: flex;
     padding-bottom: 3rem;
@@ -155,7 +165,7 @@ ul {
 
 .services-list {
     margin: 4rem auto 0 auto;
-    
+
 }
 
 .services-list__item {
@@ -179,12 +189,12 @@ ul {
 }
 
 .service-explore {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .service-link a {
     margin-top: 8rem;
-    color:#fff;
+    color: #fff;
     display: block;
     background-color: rgb(200, 45, 179);
     width: 4rem;
@@ -192,16 +202,20 @@ ul {
     padding: 1rem 0;
     border-radius: 2rem;
 }
+
 .service-link a:hover {
     background-color: rgba(200, 45, 179, 0.5);
 }
 
 .skills-experience {
     padding-left: 4rem;
+    display: flex;
+    margin-bottom: 4rem;
 }
 
 .skills {
     width: 30rem;
+    margin-right: 10rem;
 }
 
 .skills-title {
@@ -230,8 +244,110 @@ ul {
 
 .skill-name {
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .experience {
     width: 35rem;
+}
+
+.experience-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.experience-list__item {
+    border-top: 2px solid #000;
+    display: flex;
+    padding: 2rem 0;
+}
+
+.experience-year {
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-right: 2rem;
+    width: 8rem;
+}
+
+.experience-position {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.experience-company {
+    color: #555;
+    font-weight: bold;
+}
+
+#projects {
+    background-color: rgba(255, 178, 0, 0.5);
+}
+
+.projects {
+
+    padding: 1px 4rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-list__item {
+    border-top: 2px solid #000;
+    padding-top: 2rem;
+    width: 24rem;
+}
+
+.project-list__item:nth-child(2) {
+    margin-top: -4rem;
+}
+
+.project-list__item:nth-child(3) {
+    margin-top: -8rem;
+}
+
+.project-info {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.project-name {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 21rem;
+}
+
+.project-description {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    border-radius: 50%;
+    background-color: rgb(200, 45, 179);
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+
+.project-link a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #fff;
+}
+
+.project-link:hover {
+    background-color: rgba(200, 45, 179, 0.5);
+}
+
+.project-image {
+    height: 15rem;
+    background-color: rgba(200, 45, 179, 0.5);
+    margin-bottom: 4rem;
 }
