@@ -51,7 +51,7 @@ a {
 }
 
 .navigation-list__item a:hover {
-    color: #aaa;
+    color: rgb(200, 45, 179);
     cursor: pointer;
 }
 
@@ -66,8 +66,7 @@ a {
 
 .call-button:hover,
 .hire-button:hover {
-    cursor: pointer;
-    background-color: rgba(200, 45, 179, 0.5);
+    background-color: rgb(200, 45, 179, 0.8);
 }
 
 .about {
@@ -215,7 +214,7 @@ a {
 }
 
 .service-link a:hover {
-    background-color: rgba(200, 45, 179, 0.5);
+    background-color: rgba(200, 45, 179, 0.8);
 }
 
 .skills-experience {
@@ -279,18 +278,20 @@ a {
     font-weight: bold;
     margin-top: 0.2rem;
     margin-right: 2rem;
-    width: 8rem;
+    min-width: 6rem;
 }
 
 .experience-position {
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    max-width: 20rem;
 }
 
 .experience-company {
     color: #555;
     font-weight: bold;
+    max-width: 20rem;
 }
 
 #projects {
@@ -298,7 +299,6 @@ a {
 }
 
 .projects {
-
     padding: 1px 4rem;
 }
 
@@ -357,12 +357,12 @@ a {
 }
 
 .project-link:hover {
-    background-color: rgba(200, 45, 179, 0.5);
+    background-color: rgba(200, 45, 179, 0.8);
 }
 
 .project-image {
     height: 15rem;
-    background-color: rgba(200, 45, 179, 0.5);
+    background-color: rgba(200, 45, 179, 0.8);
     margin-bottom: 4rem;
 }
 
@@ -440,12 +440,14 @@ a {
     margin-right: 2rem;
 }
 
-.email-link a, .location-address {
+.email-link a,
+.location-address {
     font-weight: bold;
     color: #333;
 }
 
-.email-link span, .location-address span {
+.email-link span,
+.location-address span {
     font-size: 1.4rem;
     color: #000;
 }
@@ -489,10 +491,10 @@ a {
 .contact-links__wrapper:hover {
     transform: rotate(20deg);
     transition: all 2s;
-} 
+}
 
 .contact-sayhi__button:hover {
-    background-color: rgba(200, 45, 179, 0.5);
+    background-color: rgba(200, 45, 179, 0.8);
 }
 
 #footer {
@@ -506,9 +508,13 @@ a {
     border-top: 2px solid #000;
     padding: 2rem 0;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-link a {
-    text-decoration: none;
     color: #000;
+}
+
+.footer-link a:hover {
+    color: #333;
 }
