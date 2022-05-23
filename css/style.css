@@ -33,13 +33,11 @@ a {
 }
 
 .logo {
-    width: 4rem;
-    height: 4rem;
-    /* background: url('../media/logo.png') center no-repeat; */
-    background-size: contain;
+    width: 8rem;
 }
 
 .navigation-list {
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -55,12 +53,12 @@ a {
     cursor: pointer;
 }
 
-.call-button,
+.chat-button,
 .hire-button {
     text-decoration: none;
     color: #fff;
     padding: 0.8rem 1.6rem;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     background-color: rgb(200, 45, 179);
 }
 
@@ -120,7 +118,7 @@ a {
     text-decoration: none;
     color: rgb(200, 45, 179);
     padding: 0.8rem 1.6rem;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     background-color: #fff;
     font-weight: bold;
 }
@@ -153,11 +151,15 @@ a {
 
 .about-bg {
     width: 40rem;
-    background-color: rgb(200, 45, 179);
+    height: 40rem;
+    background: rgb(200, 45, 179) url('../media/about-bg.jpg') 46% 50% no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 198, 160);
 }
 
 #services {
-    background-color: rgba(255, 178, 0, 0.5);
+    background-color: rgb(255, 178, 0);
 
 }
 
@@ -295,7 +297,7 @@ a {
 }
 
 #projects {
-    background-color: rgba(255, 178, 0, 0.5);
+    background-color: rgb(255, 178, 0);
 }
 
 .projects {
@@ -305,13 +307,22 @@ a {
 .project-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .project-list__item {
-    border-top: 2px solid #000;
-    padding-top: 2rem;
     width: 24rem;
+    height: 30rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 2rem 1rem 0 1rem;
     margin-right: 1rem;
+}
+
+.project-list__item:hover {
+    border-top: none;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    transition: all 0.5s;
 }
 
 .project-list__item:nth-child(2) {
@@ -332,7 +343,7 @@ a {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.8rem;
-    width: 20rem;
+    width: 18rem;
 }
 
 .project-description {
@@ -362,9 +373,26 @@ a {
 
 .project-image {
     height: 15rem;
-    background-color: rgba(200, 45, 179, 0.8);
+    border-radius: 0.5rem;
     margin-bottom: 4rem;
 }
+
+.usaid-logo {
+    background: #fff url('../media/usaid-logo.png') center no-repeat;
+    background-size: 12rem;
+}
+
+.hr-logo {
+    background: #fff url('../media/hr-logo.svg') center no-repeat;
+    background-size: 8rem;
+}
+
+.pbo-logo {
+    background: #fff url('../media/pbo-logo.svg') center no-repeat;
+    background-size: 18rem;
+}
+
+
 
 .testimonals-top {
     display: flex;
@@ -405,7 +433,7 @@ a {
 }
 
 #contact {
-    background-color: rgba(255, 178, 0, 0.5);
+    background-color: rgb(255, 178, 0);
 }
 
 .contact {
@@ -498,7 +526,7 @@ a {
 }
 
 #footer {
-    background-color: rgba(255, 178, 0, 0.5);
+    background-color: rgb(255, 178, 0);
     padding-top: 4rem;
 }
 
