@@ -1,6 +1,6 @@
 body {
-    font-family: Montserrat, sans-serif;
-    background-color: rgb(250, 250, 250);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
 }
 
 ul {
@@ -23,13 +23,18 @@ a {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 96vw;
+    background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-flow: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem 0 2rem;
+    padding: 0.2rem 2vw;
     font-size: 1rem;
     margin-bottom: 1rem;
+    z-index: 2;
 }
 
 .logo {
@@ -44,7 +49,7 @@ a {
 
 .navigation-list__item a {
     text-decoration: none;
-    color: #555;
+    color: #000;
     padding: 0 1rem;
 }
 
@@ -55,26 +60,33 @@ a {
 
 .chat-button,
 .hire-button {
+    padding: 0.8rem 1.6rem 0.6rem 1.6rem;
+    border-radius: 0.2rem;
     text-decoration: none;
     color: #fff;
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.2rem;
     background-color: rgb(200, 45, 179);
 }
 
-.call-button:hover,
+.chat-button:hover,
 .hire-button:hover {
     background-color: rgb(200, 45, 179, 0.8);
 }
 
+.hire-button {
+    margin: 0 1rem 1rem 0;
+}
+
 .about {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 0 4rem 0;
 }
 
 .about-text {
     max-width: 30rem;
-    font-size: 1rem;
-    margin-right: 4rem;
+    width: 50%;
+    margin-right: 1rem;
 }
 
 .section-title {
@@ -85,7 +97,8 @@ a {
 }
 
 .name {
-    color: #555;
+    text-decoration: underline;
+
 }
 
 .subject-english {
@@ -114,10 +127,9 @@ a {
 }
 
 .portfolio-button {
-    margin-left: 1rem;
     text-decoration: none;
     color: rgb(200, 45, 179);
-    padding: 0.8rem 1.6rem;
+    padding: 0.8rem 1.6rem 0.6rem 1.6rem;
     border-radius: 0.2rem;
     background-color: #fff;
     font-weight: bold;
@@ -149,13 +161,18 @@ a {
     color: #555;
 }
 
+.small-bg {
+    display: none;
+}
+
 .about-bg {
-    width: 40rem;
-    height: 40rem;
-    background: rgb(200, 45, 179) url('../media/about-bg.jpg') 46% 50% no-repeat;
+    max-width: 40rem;
+    width: 40vw;
+    height: 40vw;
+    background: url('../media/photo.jpg') center no-repeat;
     background-size: cover;
     border-radius: 50%;
-    border: 4px solid rgb(0, 198, 160);
+    border: 4px solid rgb(200, 45, 179);
 }
 
 #services {
@@ -206,13 +223,14 @@ a {
 .service-link a {
     margin-top: 8rem;
     color: #fff;
-    display: block;
+    display: inline-block;
     background-color: rgb(200, 45, 179);
     width: 4rem;
     text-align: center;
     padding: 1rem 0;
     border-radius: 2rem;
     transform: rotate(-40deg);
+    z-index: 0;
 }
 
 .service-link a:hover {
@@ -306,13 +324,13 @@ a {
 
 .project-list {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .project-list__item {
-    width: 24rem;
-    height: 30rem;
+    width: 20rem;
+    height: 24rem;
     border-top: 2px solid rgba(0, 0, 0, 0.5);
     padding: 2rem 1rem 0 1rem;
     margin-right: 1rem;
@@ -336,14 +354,17 @@ a {
 
 .project-info {
     display: flex;
-    flex-flow: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .project-name {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.8rem;
-    width: 18rem;
+    width: 14rem;
 }
 
 .project-description {
@@ -372,27 +393,25 @@ a {
 }
 
 .project-image {
-    height: 15rem;
+    height: 12rem;
     border-radius: 0.5rem;
     margin-bottom: 4rem;
 }
 
-.usaid-logo {
-    background: #fff url('../media/usaid-logo.png') center no-repeat;
-    background-size: 12rem;
+.alif-academy-logo {
+    background: #fff url('../media/alif-academy-logo.jpg') center no-repeat;
+    background-size: 16rem;
 }
 
 .hr-logo {
-    background: #fff url('../media/hr-logo.svg') center no-repeat;
-    background-size: 8rem;
+    background: #fff url('../media/unicef-logo.png') center no-repeat;
+    background-size: 16rem;
 }
 
 .pbo-logo {
     background: #fff url('../media/pbo-logo.svg') center no-repeat;
     background-size: 18rem;
 }
-
-
 
 .testimonals-top {
     display: flex;
@@ -417,7 +436,7 @@ a {
 
 .testimonals-list__item {
     border-top: 2px solid #000;
-    padding: 2rem 5rem;
+    padding: 2rem;
     margin: 0 auto;
 }
 
@@ -545,4 +564,92 @@ a {
 
 .footer-link a:hover {
     color: #333;
+}
+
+@media only screen and (max-width: 1200px) {
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about {
+        align-items: flex-start;
+    }
+
+    .about-bg {
+        margin-top: 4rem;
+        width: 50vw;
+        height: 45vw;
+    }
+
+    .hire-button {
+        display: block;
+        width: 7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .portfolio-button {
+        display: block;
+        padding: 0.2rem auto;
+        width: 7rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .navigation-list {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about-bg {
+        display: none;
+    }
+
+    .small-bg {
+        display: block;
+        margin: 0 auto;
+        width: 24vw;
+        height: 24vw;
+        background: url('../media/photo.jpg') center no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 4px solid rgb(200, 45, 179);
+    }
+    .section-title {
+        margin-top: 1rem;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text__portfolio {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .portfolio-button {
+        height: 1.5rem;
+    }
+
 }
