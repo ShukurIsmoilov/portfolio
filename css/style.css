@@ -208,6 +208,10 @@ a {
 
 }
 
+.services .section-description {
+    font-size: 16px;
+}
+
 .services-title {
     max-width: 40%;
     margin-right: 2rem;
@@ -518,10 +522,10 @@ a {
 .email-img,
 .location-img {
     background-color: #fff;
-    width: 4rem;
-    height: 3rem;
+    width: 2rem;
+    height: 1.5rem;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     border-radius: 50%;
     margin-right: 2rem;
 }
@@ -716,13 +720,14 @@ a {
     }
 
     .contact-links__left {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
-    .contact-links__email,
-    .contact-links__location {
-        justify-content: center;
+    .email-img,
+    .location-img {
+        margin-right: 0.5rem;
+
     }
 
     .contact-links__right {
@@ -730,6 +735,7 @@ a {
         width: 20rem;
         height: 20rem;
     }
+
     .contact-links__wrapper {
         margin-top: 10rem;
     }
@@ -780,6 +786,10 @@ a {
 
     .services .section-title {
         margin: 0 auto;
+        text-align: center;
+    }
+
+    .services .section-description {
         text-align: center;
     }
 
